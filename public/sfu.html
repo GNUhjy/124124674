@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SFU Room</title>
+  <style>
+    video {
+      width: 360px;
+      background-color: black;
+      margin: 10px;
+      padding: 5px;
+      border: 2px solid #ccc;
+    }
+    #videoContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+    }
+    #localVideo {
+      border-color: green;
+    }
+    .remoteVideo {
+      border-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>SFU Room</h1>
+  <h3>Room: Test</h3>
+  <div id="videoContainer">
+    <video id="localVideo" autoplay muted></video>
+  </div>
+  <footer>
+    <script src="/bundle.js"></script>
+  </footer>
+</body>
+</html>
